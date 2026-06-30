@@ -1,12 +1,13 @@
 import React from "react";
+// Changed from "@base-ui/react" to your shadcn ui path
+import { Button } from "@/components/ui/button"; 
 
 const App = () => {
   return (
-    
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="flex min-h-svh flex-col items-center justify-center">
+      <Button className="bg-red-500" variant="ghost">Click me</Button>
+    </div>
+  );
+};
 
 export default App;
